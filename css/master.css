@@ -1,9 +1,10 @@
-Target All Paragraphs
-
-p {
-    color: red
-}
-
-.special {
-    color: green
+div {
+    background-color: ;
+    padding: 10px;
+    width: 70px;
+    margin: auto;
+    border-width: 10px;
+    border-color: red;
+    border-style: solid dotted;
+    border: 10px solid red;
 }
