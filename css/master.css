@@ -1,4 +1,7 @@
-div .special {
-    color: red;
+div {
+    background-color: #f9f9f9;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    word-break: normal;
 }
 
