@@ -1,23 +1,20 @@
 body {
-    min-height: 5000px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-div {
-    color: white;
-    width: 100px;
-    padding: 10px;
+table {
+    width: 100;
+    border: 1px solid #ccc;
+    border-spacing: 0px;
 }
-
-.one {
+table td {
+    padding: 15px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+}
+table thead {
     background-color: red;
-    position: absolute;
-}
-.two {
-    background-color: green;
-}
-
-.parent {
-    width: 500px;
-    height: 300;
-    background-color: blue;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border-color: #f35246;
 }
