@@ -1,20 +1,38 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-table {
-    width: 100;
-    border: 1px solid #ccc;
-    border-spacing: 0px;
-}
-table td {
-    padding: 15px;
-    background-color: #eee;
-    border: 1px solid #ccc;
-}
-table thead {
+.one {
     background-color: red;
-    color: #fff;
-    font-weight: bold;
-    text-align: center;
-    border-color: #f35246;
+    color: white;
+}
+.two {
+    background-color: #eee;
+    width: 100px;
+    height: 100px;
+}
+p {
+    background-color: #eee;
+    width: 100px;
+    height: 100px;
+}
+a {
+    color: green;
+    text-decoration: none;
+}
+
+a:hover{
+    color: red;
+}
+
+.ch:checked {
+    display: none;
+}
+a:visited {
+    color: blue;
+}
+
+.in {
+    border: 1px solid black;
+}
+
+.in:focus {
+    border-color: yellow;
+    outline: none;
 }
