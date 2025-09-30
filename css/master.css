@@ -1,6 +1,11 @@
 
 body { font-family: Georgia, serif; background:#fff; }
-.parent { display: flex; align-items: center; gap: 20px; padding: 16px; }
+.parent { display: flex; 
+        align-items: center; 
+        gap: 20px; 
+        padding: 16px;
+        counter-increment: members-counter; 
+}
 .user {
   width: 80px; height: 80px; display: grid; place-items: center;
   font-size: 48px; background: #eee; color: #333;
@@ -13,18 +18,8 @@ body { font-family: Georgia, serif; background:#fff; }
   width: 70%;
   position: relative;
 }
-
-.one::after{
-    content: "";
-    position: absolute;
-    width: 5px;
-    height: 100%;
-    right: -10px;   
-    top: 0;
-    background-color: #009688;
-}
 .one::before {
-    content: "";
+    content: url();
     width: 0px;
     height: 0px;
     background-color: white;
@@ -36,6 +31,14 @@ body { font-family: Georgia, serif; background:#fff; }
     border-style: solid;
     border-color: transparent green transparent transparent;
 }
+.one::hover::before{
+    display: block;
+}
+.one::after{
+    content: counter(members-counter);
+}
+
+
 /* .one .pipeline {
   position: absolute;
   width: 5px;
@@ -62,4 +65,23 @@ body { font-family: Georgia, serif; background:#fff; }
 .three::first-line{ font-weight: bold; color: green; }
 .four::selection { background-color: black; color: yellow; }
 
+}
+
+ul {
+    list-style: none;
+}
+ul li {
+    position: relative;
+}
+ul li::before { 
+    content: url();
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    margin-top: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent green transparent transparent;
 }
