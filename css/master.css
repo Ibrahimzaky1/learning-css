@@ -1,23 +1,65 @@
-.one span {
-    display: inline-block;
-    background-color: red;
-    color: white;
-    font-size: 60px;
-    font-weight: bold;
+
+body { font-family: Georgia, serif; background:#fff; }
+.parent { display: flex; align-items: center; gap: 20px; padding: 16px; }
+.user {
+  width: 80px; height: 80px; display: grid; place-items: center;
+  font-size: 48px; background: #eee; color: #333;
 }
-.two::first-letter{
-    display: inline-block;
-    background-color: red;
-    color: white;
-    font-size: 60px;
-    font-weight: bold;
-}
-.three::first-line{
-    font-weight: bold;
-    color: green;
+.one {
+  position: relative;
+  padding: 18px 28px;
+  background: #eee;
+  border-right: 6px solid transparent; /* space for the bar */
+  width: 70%;
+  position: relative;
 }
 
-.four::selection {
-    background-color: black;
-    color: yellow;
+.one::after{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    right: -10px;   
+    top: 0;
+    background-color: #009688;
+}
+.one::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    background-color: white;
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    margin-top: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent green transparent transparent;
+}
+/* .one .pipeline {
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  right: -10px;   
+  top: 0;
+  background-color: #009688;
+} */
+
+.one span { 
+  display: inline-block;
+  background-color: red;
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+}
+.two::first-letter{
+  display: inline-block;
+  background-color: red;
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+}
+.three::first-line{ font-weight: bold; color: green; }
+.four::selection { background-color: black; color: yellow; }
+
 }
