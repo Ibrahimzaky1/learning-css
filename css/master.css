@@ -1,12 +1,16 @@
-div {
-    padding: 20px;
+.parent {
+    width: 600px
+    overflow: hidden;
+    margin: 20px;
+    padding: 20px:
+    background-color: #ddd;
+}
+
+.one {
     background-color: #eee;
-    margin: 20px auto;
     width: 300px;
-    box-shadow:
-    0 0 10px 0 #f10000,
-    0 0 10px 0 #000,
-    0 0 10px 0 #000, 
-    0 0 10px 0 #00f, 
-    0 0 10px 0 yellow;
+    float: left;
+    padding: 10px;
+    border: 10px solid red;
+    box-sizing: content-box;
 }
