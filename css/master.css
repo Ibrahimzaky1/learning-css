@@ -1,15 +1,36 @@
-.one {
+.parent {
+    overflow: hidden;
+    margin: auto;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
     background-color: #eee;
-    width: 200px;
-    height: 100px;
-    /* transition-duration: 1s;
-    transition-delay: 0.2s;
-    transition-property: width;
-    transition-timing-function: ease-in-out; */
-    transition: all 2s 0.5s linear;
 }
 
-.one:hover {
-    width: 280px;
-    height: 120px;
+.parent .one,
+.parent .two {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.one {
+    background-color: #ddd;
+}
+.two {
+    background-color: #aaa;
+}
+
+.up {
+    background-color: red;
+    color: white;
+    height: 90px;
+    margin-bottom: 20px;
+}
+
+.down {
+    background-color: green;
+    color: white;
+    height: 90px;
+    margin-top: 20px;
 }
