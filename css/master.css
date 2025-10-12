@@ -2,20 +2,11 @@
     box-sizing: border-box;
 }
 
-.flex {
-    background-color: #eee;
-    width: 600px;
-    padding: 20px;
-    margin: 20px auto;
-    display: flex;
+img {
+    transition: 0.3s;
+    filter: invert(100%);
 }
-.flex div{
-    background-color: #f00;
-    color: white;
-    width: calc(100% / 3);
-    text-align: center;
-    padding: 20px;
-    margin-right: 5px;
-    flex-grow: 1;
-    
+
+img:hover {
+    filter: invert(0);
 }
