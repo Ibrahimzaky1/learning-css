@@ -15,34 +15,7 @@
     width: calc(100% / 3);
     text-align: center;
     padding: 20px;
-}
-.float {
-    overflow: hidden;
-    background-color: #eee;
-    width: 600;
-    padding: 20px;
-    margin: 20px auto;
-}
-.float div {
-    background-color: #f00;
-    color: white;
-    float: left;
-    width: calc(100% / 3);
-    text-align: center;
-    padding: 20px;
-}
-.flex .one,
-.float .one {
-    height: 80px;
-}
-.flex .two,
-.float .two {
-    height: 120px;
-}
-
-.center {
-    background-color: blue;
-    color: white;
-    width: 300px;
-    height: 200px;
+    margin-right: 5px;
+    flex-grow: 1;
+    
 }
