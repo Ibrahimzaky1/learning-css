@@ -1,29 +1,21 @@
-div {
-    width: 400px;
-    height: 200px;
-    background-color: #eee;
-    margin: 20px auto;
-    position: relative;
-    padding: 10px;
+* {
+    box-sizing: border-box;
 }
 
-div:before {
-    content: '';
-    position: absolute;
-    top: -5px;
-    left: 0;
-    width: 100%;
+.parent {
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+}
+
+.parent {
     background-color: red;
-    height: 10px;
-    background-image: linear-gradient(
-    to right, 
-    #2980b9 20%, 
-    #27ae60 20%,
-    #d35400 40%, 
-    #d35400 40%, 
-    #d35400 60%, 
-    #8e44ad 60%, 
-    #8e44ad 80%, 
-    #c0392b 80%
-    );
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
 }
