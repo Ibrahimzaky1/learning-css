@@ -1,12 +1,29 @@
-* {
-    box-sizing: border-box;
+div {
+    width: 400px;
+    height: 200px;
+    background-color: #eee;
+    margin: 20px auto;
+    position: relative;
+    padding: 10px;
 }
 
-img {
-    transition: 0.3s;
-    filter: invert(100%);
-}
-
-img:hover {
-    filter: invert(0);
+div:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    background-color: red;
+    height: 10px;
+    background-image: linear-gradient(
+    to right, 
+    #2980b9 20%, 
+    #27ae60 20%,
+    #d35400 40%, 
+    #d35400 40%, 
+    #d35400 60%, 
+    #8e44ad 60%, 
+    #8e44ad 80%, 
+    #c0392b 80%
+    );
 }
