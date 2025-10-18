@@ -4,8 +4,8 @@
 
 .parent {
     margin: 20px auto;
-    width: 800px;
-    height: 500px;
+    width: 400px;
+    height: 250px;
     background-color: #eee;
     display: grid;
     grid-template-areas: "head head head head";
