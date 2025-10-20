@@ -1,15 +1,15 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 .parent {
     margin: 20px auto;
-    width: 400px;
-    height: 250px;
+    height: 400px;
     background-color: #eee;
     display: grid;
     grid-template-areas: "head head head head";
-    gap: 10px 10px;
+    grid-template-columns: minmax(200px, 400px) repeat(2, 1fr);
 }
 
 .parent div {
