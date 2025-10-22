@@ -14,19 +14,27 @@ div {
     top: 50%;
     margin-left: -50px;
     margin-top: -50px;
-    animation-name: spin;
-    animation-duration: 1s;
-    border-radius: 50%;
-    border: 5px solid #E91E63;
-    border-left-color: transparent;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+
+    /* animation-name: coloring;
+    animation-duration: 5s; */
+    /* animation-iteration-count: 1; */
+    /* animation-timing-function: linear; */
+    /* animation-direction: normal;
+    animation-delay: -2s; */
+    /* animation-fill-mode: both; */
+    animation: coloring 3s linear 2s infinite reverse;
 }
-@keyframes spin {
+div:hover {
+    animation-play-state: paused;
+}
+@keyframes coloring {
     0% {
-        transform: rotate(0deg)
+        background-color: red;
+    }
+    50% {
+        background-color: blue;
     }
     100% {
-        transform: rotate(360deg);
+        background-color: black;
     }
 }
