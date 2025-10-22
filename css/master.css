@@ -5,38 +5,28 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
-.container {
-    margin: 40px auto;
-    width: 200px;
-}
-.box:hover {
-    transform: translate()rotateY(-100deg);
-}
-.box {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    transform-style: preserve-3d;
-    transition: transform 1s;
-}
-.box:hover {
-    transform: rotateY(-180deg);
-}
-.box .face {
-    position: absolute;
-    width: 100%;
+div {
+    width: 100px;
     height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 30px;
-    color: white;
-    backface-visibility: hidden;
+    background-color: #c9b8b8;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+    animation-name: spin;
+    animation-duration: 1s;
+    border-radius: 50%;
+    border: 5px solid #E91E63;
+    border-left-color: transparent;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
-.box .font {
-    background-color: red;
-}
-.box .back {
-    background-color: green;
+@keyframes spin {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
